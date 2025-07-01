@@ -126,6 +126,9 @@ Epoch 3/5 - Loss: 0.5421 | Pain: Acc=0.84, F1=0.81 | Stress: Acc=0.87, F1=0.85
 ### 3. Run the Demo
 
 ```bash
+git clone https://github.com/Mishthijainn/dualnet.git
+cd dualnet-fnirs
+pip install -r requirements.txt
 python main.py
 ```
 
