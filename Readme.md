@@ -47,13 +47,6 @@ DualNet is a **multi-task deep learning model** that learns shared and task-spec
   - A **Bi-directional LSTM** for sequence learning.
   - Fully connected layers with dropout for robust classification.
 
-
-  
-4. **Results Summary Table at the Top (Quick Preview):**
-
-Add a mini summary table after the architecture overview, like:
-
-```markdown
 ### 🚀 Summary
 
 | Task       | Accuracy (%) | Inference Speed (ms) | Params (K) |
