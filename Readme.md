@@ -15,7 +15,6 @@ A PyTorch-based deep learning framework designed to simultaneously classify **pa
 - [Highlights](#highlights)
 - [Use Cases](#use-cases)
 - [Author](#author)
-- [License](#license)
 
 
 ## 🧠 Architecture Overview
