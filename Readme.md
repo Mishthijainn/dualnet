@@ -3,6 +3,20 @@
 A PyTorch-based deep learning framework designed to simultaneously classify **pain** and **stress** from functional near-infrared spectroscopy (fNIRS) signals. DualNet integrates multiple deep learning paradigms such as **multi-scale convolutions**, **transformers**, **bi-LSTMs**, and **task-specific attention mechanisms**, supporting a **three-phase training strategy** for robust representation learning.
 
 ---
+## 📚 Table of Contents
+- [Architecture Overview](#architecture-overview)
+- [Training Strategy](#training-strategy)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Evaluation Metrics](#evaluation-metrics)
+- [Key Research Findings](#key-research-findings)
+- [Benchmark Comparison](#benchmark-comparison)
+- [Requirements](#requirements)
+- [Highlights](#highlights)
+- [Use Cases](#use-cases)
+- [Author](#author)
+- [License](#license)
+
 
 ## 🧠 Architecture Overview
 
@@ -32,6 +46,21 @@ DualNet is a **multi-task deep learning model** that learns shared and task-spec
   - A feature projection layer.
   - A **Bi-directional LSTM** for sequence learning.
   - Fully connected layers with dropout for robust classification.
+
+
+  
+4. **Results Summary Table at the Top (Quick Preview):**
+
+Add a mini summary table after the architecture overview, like:
+
+```markdown
+### 🚀 Summary
+
+| Task       | Accuracy (%) | Inference Speed (ms) | Params (K) |
+|------------|--------------|----------------------|------------|
+| Pain       | 87.9         | 12.3                 | 480        |
+| Stress     | 90.2         | 12.3                 | 480        |
+
 
 ---
 
