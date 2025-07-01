@@ -109,7 +109,7 @@ python main.py
 
 This will:
 
-- Generate synthetic fNIRS signals
+- Generate synthetic fNIRS signals if you do not have your own data
 - Train DualNet across all 3 phases
 - Print evaluation metrics and make test predictions
 
@@ -174,6 +174,18 @@ This will:
 **Insight**: DualNet’s full architecture shows the **best performance**. Removal of any key module causes noticeable drops in accuracy, confirming their value.
 
 ---
+### 📊 DualNet vs Existing Methods
+
+| Method          | Arch Type         | Pain Acc (%) | Stress Acc (%) | Train Time (min) | Infer Spd (ms) | Params (K) |
+|------------------|--------------------|---------------|----------------|------------------|----------------|------------|
+| **DualNet (Ours)** | Unified Multi-task | **87.9**      | **90.2**       | **18**           | **12.3**       | **480**    |
+| CNN+BiLSTM        | Sequential Deep     | 83.4          | 85.6           | 25               | 15.7           | 520        |
+| Transformer-only  | Pure Attention      | 79.8          | 82.1           | 35               | 18.9           | 650        |
+| SE-ResNet         | Attention CNN       | 81.2          | 83.4           | 22               | 14.2           | 420        |
+| CBAM-Net          | Dual Attention      | 80.5          | 84.1           | 20               | 13.8           | 450        |
+| SVM (RBF)         | Traditional ML      | 74.3          | 76.2           | **3**            | **2.1**        | N/A        |
+| Random Forest     | Ensemble ML         | 71.8          | 73.5           | **5**            | **1.8**        | N/A        |
+
 
 ## 🥇 Benchmark Comparison
 
@@ -232,6 +244,3 @@ Contact: [mishjain02@gmail.com](mailto:mishjain02@gmail.com)
 
 This project is for **non-commercial, academic use** only. Please contact the author for any other usage.
 
-```
-
-```
